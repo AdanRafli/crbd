@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Cita Rasa Berwarna Digital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .navbar {
+            background-color: #1D117f;
+        }
+        .navbar-brand img {
+            height: 50px; /* Memperbesar logo */
+        }
+        .nav-link {
+            color: white;
+        }
+        .nav-link:hover {
+            color: #49A5ff;
+        }
+        .jumbotron {
+            background: url('img/company-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 25px;
+        }
+        .btn-custom {
+            background-color: #c23e72;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        .icon-custom {
+            font-size: 3rem;
+            color: #ff66c4;
+        }
+        .bg-navy { background-color: #1D117f; color: white; }
+        .bg-skyblue { background-color: #49A5ff; color: white; }
+        .bg-darkpink { background-color: #c23e72; color: white; }
+        .bg-lightpink { background-color: #ff66c4; color: black; }
+        .pricing-card .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .pricing-card .card-header {
+        padding: 20px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .price {
+        font-size: 16px;
+        font-weight: normal;
+        color: #fff;
+        margin: 0;
+    }
+
+    .pricing-card ul {
+        list-style-type: none;
+        padding: 0;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .pricing-card ul li {
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+    }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .team-member h5 {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        .portfolio, .certificate {
+        width: 100%;
+        height: 200px; /* Membatasi tinggi gambar */
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+        .footer {
+            background-color: #1D117f;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #49A5ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vision-mission">Visi & Misi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Tim Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Layanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1>Selamat Datang di PT Cita Rasa Berwarna Digital</h1>
+        <p>Solusi perangkat lunak inovatif untuk bisnis yang berkembang</p>
+        <img src="img/logo.png" alt="Logo" class="d-block mx-auto mb-3" style="width: 300px;">
+        <a href="#about" class="btn btn-custom">Pelajari Lebih Lanjut</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-navy">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p class="text-center">PT Cita Rasa Berwarna Digital didirikan pada 1 Oktober 2024, dengan visi menjadi penyedia solusi perangkat lunak yang inovatif dan terpercaya.</p>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision-mission" class="section bg-skyblue">
+        <div class="container">
+            <h2 class="section-title">Visi & Misi</h2>
+            <div class="row text-center">
+                <div class="col-md-4"><i class="bi bi-bullseye icon-custom"></i>
+                    <h4>Visi</h4>
+                    <p>Menjadi penyedia solusi perangkat lunak terkemuka yang inovatif dan terpercaya.</p>
+                </div>
+                <div class="col-md-8"><i class="bi bi-gear-fill icon-custom"></i>
+                    <h4>Misi</h4>
+                    <ul class="list-unstyled">
+                        <li>Mengembangkan perangkat lunak inovatif.</li>
+                        <li>Memberikan solusi teknologi efisien.</li>
+                        <li>Dukungan teknis yang handal.</li>
+                        <li>Inovasi berkelanjutan.</li>
+                        <li>Kepercayaan bersama klien.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section bg-darkpink">
+        <div class="container">
+            <h2 class="section-title">Tim Kami</h2>
+            <div class="row">
+                <!-- 6 Team Members -->
+                <div class="col-md-4 team-member">
+                    <img src="img/naufal.jpeg" alt="Naufal">
+                    <h5>Muhammad Naufal Setiawan</h5>
+                    <p>Direktur & Project Manager</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="img/maria.jpeg" alt="Maria">
+                    <h5>Maria Goreti Bara Dawa</h5>
+                    <p>System/Software Analyst</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="img/gilang.jpeg" alt="Gilang">
+                    <h5>Gilang Cahya Pinandhita</h5>
+                    <p>Software Designer</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="img/adan.jpeg" alt="Adan">
+                    <h5>Adan Rafli</h5>
+                    <p>Programmer</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="img/nedi.jpeg" alt="Nedi">
+                    <h5>Nedianti Rellya</h5>
+                    <p>Tester</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="img/siska.jpeg" alt="Siska">
+                    <h5>Siska Damaiyanti</h5>
+                    <p>Technical Writer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-lightpink">
+        <div class="container">
+            <h2 class="section-title">Portofolio</h2>
+            <p>Beberapa proyek yang telah kami kerjakan:</p>
+            <div class="row">
+                <!-- 6 Portfolio images -->
+                <div class="col-md-4"><img src="img/portfolio1.jpg" class="portfolio" alt="Portfolio"></div>
+                <div class="col-md-4"><img src="img/portfolio2.jpg" class="portfolio" alt="Portfolio"></div>
+                <div class="col-md-4"><img src="img/portfolio3.jpg" class="portfolio" alt="Portfolio"></div>
+                <div class="col-md-4"><img src="img/portfolio4.jpg" class="portfolio" alt="Portfolio"></div>
+                <div class="col-md-4"><img src="img/portfolio5.jpg" class="portfolio" alt="Portfolio"></div>
+                <div class="col-md-4"><img src="img/portfolio6.jpg" class="portfolio" alt="Portfolio"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section bg-skyblue">
+        <div class="container">
+            <h2 class="section-title">Sertifikat</h2>
+            <p>Pengakuan kualitas dan kepercayaan kami:</p>
+            <div class="row">
+                <!-- 6 Certificate images -->
+                <div class="col-md-4"><img src="img/certificate1.jpeg" class="certificate" alt="Certificate"></div>
+                <div class="col-md-4"><img src="img/certificate2.jpeg" class="certificate" alt="Certificate"></div>
+                <div class="col-md-4"><img src="img/certificate3.jpeg" class="certificate" alt="Certificate"></div>
+                <div class="col-md-4"><img src="img/certificate4.jpeg" class="certificate" alt="Certificate"></div>
+                <div class="col-md-4"><img src="img/certificate5.jpeg" class="certificate" alt="Certificate"></div>
+                <div class="col-md-4"><img src="img/certificate6.jpg" class="certificate" alt="Certificate"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+<section id="pricing" class="section bg-navy">
+    <div class="container">
+        <h2 class="section-title text-white">Layanan Kami</h2>
+        <div class="row">
+            <!-- Pricing card for Website Development -->
+            <div class="col-md-4 pricing-card">
+                <div class="card">
+                    <div class="card-header bg-skyblue text-center">
+                        <h4>Pembuatan Website</h4>
+                        <p class="price">Mulai dari Rp2.000.000</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Desain responsif sesuai kebutuhan</li>
+                            <li>SEO dasar untuk meningkatkan visibilitas</li>
+                            <li>Integrasi media sosial</li>
+                            <li>Pengelolaan konten dan blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing card for App Development -->
+            <div class="col-md-4 pricing-card">
+                <div class="card">
+                    <div class="card-header bg-lightpink text-center">
+                        <h4>Pengembangan Aplikasi</h4>
+                        <p class="price">Hubungi Kami untuk Harga</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Aplikasi yang disesuaikan dengan bisnis</li>
+                            <li>Pengembangan lintas platform</li>
+                            <li>Performa optimal dan aman</li>
+                            <li>Dukungan penuh setelah peluncuran</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing card for Tech Consultation -->
+            <div class="col-md-4 pricing-card">
+                <div class="card">
+                    <div class="card-header bg-darkpink text-center">
+                        <h4>Konsultasi Teknologi</h4>
+                        <p class="price">Rp500.000 per sesi</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Pendampingan solusi teknologi</li>
+                            <li>Analisis kebutuhan bisnis</li>
+                            <li>Rekomendasi strategi digital</li>
+                            <li>Diskusi langsung dengan ahli kami</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-darkpink">
+        <div class="container text-center">
+            <h2 class="section-title">Kontak Kami</h2>
+            <p><i class="bi bi-geo-alt-fill"></i> Kp. Rawabacang, Jl. Bakti 3, Jatirahyu, Pondok Melati, Kota Bekasi, Jawa Barat 17414</p>
+            <p><i class="bi bi-telephone-fill"></i> 081385773724</p>
+            <p><i class="bi bi-envelope-fill"></i> citarasaberwarnadigital@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PT Cita Rasa Berwarna Digital. All Rights Reserved.</p>
+            <div>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
